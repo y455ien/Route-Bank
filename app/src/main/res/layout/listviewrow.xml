@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/row_roundcorner"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/row_imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/avatar_image"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:layout_rowSpan="5" />
+
+        <TextView
+            android:id="@+id/row_fullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FullName"
+            android:textColor="@color/mainPurple"
+            android:textStyle="bold"
+            app:layout_column="1"
+            app:layout_columnSpan="2"
+            app:layout_gravity="center"
+            app:layout_row="0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:padding="5dp"
+            android:text="TYPE:"
+            android:textColor="@color/mainPurple"
+            android:textSize="10sp"
+            app:layout_column="1"
+            app:layout_gravity="start"
+            app:layout_row="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:padding="5dp"
+            android:text="USERNAME:"
+            android:textColor="@color/mainPurple"
+            android:textSize="10sp"
+            app:layout_column="1"
+            app:layout_gravity="start"
+            app:layout_row="2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:padding="5dp"
+            android:text="PASSWORD:"
+            android:textColor="@color/mainPurple"
+            android:textSize="10sp"
+            app:layout_column="1"
+            app:layout_gravity="start"
+            app:layout_row="3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:padding="5dp"
+            android:text="BALANCE:"
+            android:textColor="@color/mainPurple"
+            android:textSize="10sp"
+            app:layout_column="1"
+            app:layout_gravity="start"
+            app:layout_row="4" />
+
+        <TextView
+            android:id="@+id/row_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:shadowColor="@color/lightPurple"
+            android:text="type"
+            android:textSize="10sp"
+            app:layout_column="2"
+            app:layout_gravity="start"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/row_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:shadowColor="@color/lightPurple"
+            android:text="username"
+            android:textSize="10sp"
+            app:layout_column="2"
+            app:layout_gravity="start"
+            app:layout_row="2" />
+
+        <TextView
+            android:id="@+id/row_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:shadowColor="@color/lightPurple"
+            android:text="password"
+            android:textSize="10sp"
+            app:layout_column="2"
+            app:layout_gravity="start"
+            app:layout_row="3" />
+
+        <TextView
+            android:id="@+id/row_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:shadowColor="@color/lightPurple"
+            android:text="balance"
+            android:textSize="10sp"
+            app:layout_column="2"
+            app:layout_gravity="start"
+            app:layout_row="4" />
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
